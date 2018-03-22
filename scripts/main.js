@@ -34,9 +34,9 @@ $(document).ready(() => {
     rainbowChars = headerAdvice.map((char, ind) => { //замена цвета в буквах
         if (i === 6) i = 0;
         if (char !== ' ') {
-            return `<span style="color: ${colors[i++]}; font-size: 1.1em">${char}</span>`
+            return `<span style="color: ${colors[i++]}; font-size: 1.02em">${char}</span>`
         } else {
-            return `<span style="font-size: 1.1em"> </span>`;
+            return `<span style="font-size: 1.02em"> </span>`;
         };
     });
     
@@ -53,7 +53,7 @@ $(document).ready(() => {
 
             setTimeout(() => {
                 $('.heading h1').css('padding-top', '20px');
-                $('.heading h1, .heading h2').addClass('animated wobble');
+                $('.heading h1, .heading h2').addClass('animated rubberBand');
                 $hangingGirl.addClass('hanging-girl');
             }, 100);
         }, 400);
